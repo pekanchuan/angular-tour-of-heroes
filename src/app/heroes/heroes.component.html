@@ -1,4 +1,5 @@
-<h2 class="text-red-500 font-sans">My Heroes</h2>
+<h2>My Heroes</h2>
+<br />
 <ul class="heroes">
   <li
     *ngFor="let hero of heroes"
@@ -9,4 +10,16 @@
   </li>
 </ul>
 <br />
-<app-hero-detail [hero]="selectedHero"></app-hero-detail>
+<div *ngIf="selectedHero">
+  <h2>{{ selectedHero.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ selectedHero.id }}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input
+      type="text"
+      id="hero-name"
+      [(ngModel)]="selectedHero.name"
+      placeholder="name"
+    />
+  </div>
+</div>
