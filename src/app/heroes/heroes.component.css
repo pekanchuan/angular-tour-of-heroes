@@ -26,6 +26,4 @@
   @apply inline-block text-sm text-white pt-[0.8em] px-[0.7em] bg-[#405061] leading-[1em] relative left-[-1px] top-[-4px] h-[1.8em] mr-[.8em] rounded-l-[4px];
 }
 
-input {
-  @apply p-[.5rem];
-}
+
