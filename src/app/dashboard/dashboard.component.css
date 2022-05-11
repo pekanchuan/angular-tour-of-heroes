@@ -1,0 +1,5 @@
+@media (min-width: 600px) {
+  a {
+    @apply w-[18%] box-content;
+  }
+}

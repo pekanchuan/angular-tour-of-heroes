@@ -2,12 +2,18 @@
   <h2>{{ hero.name | uppercase }} Details</h2>
   <div><span>id: </span>{{ hero.id }}</div>
   <div>
-    <label for="hero-name">Hero name: </label>
+    <label class="text-[#435960] font-bold" for="hero-name">Hero name: </label>
     <input
-      type="text"
+      class="text-[1em] p-[.5rem]"
       id="hero-name"
       [(ngModel)]="hero.name"
-      placeholder="name"
+      placeholder="Hero name"
     />
   </div>
+  <button
+    class="mt-[20px] bg-[#eee] p-[1rem] rounded-[4px] text-[1rem] hover:bg-[#cfd8dc] disabled:bg-[#eee] text-[#ccc] cursor-auto"
+    (click)="goBack()"
+  >
+    go back
+  </button>
 </div>

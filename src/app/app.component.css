@@ -1,0 +1,11 @@
+nav a {
+  @apply p-[1rem] mt-[10px] inline-block bg-[#e8e8e8] text-[#3d3d3d] rounded-[4px];
+}
+
+nav a:hover {
+  @apply text-white bg-[#42545c];
+}
+
+nav a:active {
+  @apply bg-black;
+}
